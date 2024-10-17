@@ -1,0 +1,188 @@
+.Heros {
+    margin-top: 1rem;
+    width: 100%;
+    height: 90vh;
+    padding: 0 2rem;
+    position: relative;
+    border: 1px solid  rgb(244, 50, 50);
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.hero-left {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 2;
+    margin: 2rem 2rem;
+}
+
+.hero-name-back {
+    position: absolute;
+    font-size: 15rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(244, 50, 50);
+    opacity: 30% !important;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.hero-name {
+    font-size: 8.5rem;
+    font-weight: bold;
+    left: 2rem;
+    top: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.hero-right {
+    display: flex;
+    flex: 1;
+}
+
+.hero-role {
+    position: absolute;
+    display: flex;
+    bottom: 7rem;
+    left: 25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-role>span {
+    color: rgba(255, 70, 85, 0.749);
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.btn-grp {
+    position: absolute;
+    padding: 0 1rem;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    bottom: 5rem;
+    left: 85%;
+    z-index: 2;
+    gap: 2rem;
+}
+
+.btn-grp-btn {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-grp-btn:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.agent-select {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    background-color: transparent;
+    bottom: -348px;
+    left: 0;
+    z-index: 99;
+    align-items: center;
+    transition: all .3S ease-in-out;
+}
+
+.drow-open {
+    bottom: 0 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.up-btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    padding: 5px;
+    background-color: rgba(255, 70, 85, 0.749);
+    z-index: 100;
+    border-radius: 25%;
+}
+
+.btn-active{
+    opacity: 50%;
+    top: 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-active:hover{
+    position: relative;
+    top: -10px;
+    opacity: 100%;
+}
+
+.agent-card {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.agent-select-card {
+    margin: 1rem;
+    width: 200px;
+    height: fit-content;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #0f1923;
+    -webkit-box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; 
+}
+
+.agent-select-card>img {
+    width: 200px;
+    height: 250px;
+    opacity: 90%;
+    transition: all .3s ease-in-out;
+}
+
+.agent-select-card>img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.loading-agnt{
+    position: absolute;
+    left: 40%;
+    top:50%;
+}
+
+.valo-icon{
+    position: absolute;
+    margin-top: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
