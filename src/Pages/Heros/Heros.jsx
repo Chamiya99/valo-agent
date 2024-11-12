@@ -8,19 +8,18 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import Loading from '../../components/Loading/Loading';
-import { Opacity } from '@mui/icons-material';
+
 
 const Heros = () => {
   const [current, setCurrent] = useState(0);
   const [next, setNext] = useState(true);
   const [drowOpen, SetDrowOpen] = useState(false);
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Simulate loading time for demo purposes (you can remove or replace with actual logic)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds timeout for demo
+    }, 15000); 
     return () => clearTimeout(timer);
   }, [current]);
 
